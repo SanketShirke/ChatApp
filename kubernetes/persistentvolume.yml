@@ -5,7 +5,7 @@ metadata:
   namespace: chatapp
 spec:
   capacity:
-    storage: 5Gi
+    storage: 500Mi
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
