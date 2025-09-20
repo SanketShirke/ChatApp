@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: chatapp-pvc
+  name: mysql-pvc
   namespace: chatapp
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
-  storageClassName: manual
+      storage: 500Mi   # Request 500Mi
+  storageClassName: gp3  # Use AWS gp3 StorageClass
